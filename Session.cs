@@ -6,6 +6,6 @@ public class Session
 
     public Session()
     {
-
+        this.Names = new List<string>();
     }
 }
