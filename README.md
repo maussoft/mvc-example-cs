@@ -19,11 +19,3 @@ You end up with two files in `bin/Release/net5.0/linux-x64/publish`:
 - Acme.Example
 
 One is the config file, the other one the executable.
- 
-### TODO
-
-- add 404 for nonmatching route 
-- add debug toolbar with
-  - routing debugger (remove router debug output)
-  - API client debugger (API call pane)
-  - MySQL connection debugging (query pane)
