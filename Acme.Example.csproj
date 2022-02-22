@@ -6,7 +6,8 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <UsingTask TaskName="GenerateViews" AssemblyFile="tools\Maussoft.Mvc.ViewGen.dll" />
+  <UsingTask Condition="'$(BuildingInsideVisualStudio)' == 'true'" TaskName="GenerateViews" AssemblyFile="tools\win\Maussoft.Mvc.ViewGen.dll" />
+  <UsingTask Condition="'$(BuildingInsideVisualStudio)' == ''" TaskName="GenerateViews" AssemblyFile="tools\Maussoft.Mvc.ViewGen.dll" />
 
   <Target Name="BeforeBeforeBuild" BeforeTargets="BeforeBuild">
     <GenerateViews />
@@ -14,7 +15,6 @@
 
   <ItemGroup>
     <PackageReference Include="Maussoft.Mvc" Version="0.9.1" />
-    <!--<ProjectReference Include="..\mvc\Maussoft.Mvc.csproj" />-->
   </ItemGroup>
 
   <ItemGroup>
