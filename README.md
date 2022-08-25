@@ -1,6 +1,6 @@
 # Maussoft.Mvc C# example
 
-An example application in C# for Maussoft.Mvc (Simple C# web framework for .NET 5).
+High speed web framework built in C# that runs on .NET 6
 
 ### Build single executable
 
