@@ -13,7 +13,7 @@ You can run the following in the project directory:
         /p:DebugType=None \
         /p:DebugSymbols=false
     
-You end up with two files in `bin/Release/net5.0/linux-x64/publish`:
+You end up with two files in `bin/Release/net6.0/linux-x64/publish`:
 
 - appsettings.json
 - Acme.Example
