@@ -19,3 +19,7 @@ You end up with two files in `bin/Release/net6.0/linux-x64/publish`:
 - Acme.Example
 
 One is the config file, the other one the executable.
+
+### Links
+
+- https://tqdev.com/2021-maussoft-mvc-ported-to-net-5
