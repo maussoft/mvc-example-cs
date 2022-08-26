@@ -31,8 +31,6 @@ namespace Acme.Example.Controllers
 
             context.Data.Name = "World";
             context.Data.Html = rstr;
-
-            context.SendString(rstr);
         }
 
         public void Index(WebContext<Session> context)

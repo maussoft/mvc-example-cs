@@ -23,7 +23,7 @@
       <ProjectReference Include="..\mvc\Maussoft.Mvc.csproj" />
     </ItemGroup>
   -->
-
+  
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildProjectDirectory)\Content\**">
       <Link>Content\%(RecursiveDir)%(Filename)%(Extension)</Link>
