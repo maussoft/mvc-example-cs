@@ -6,11 +6,11 @@ using System;
 
 namespace Acme.Example.Views.Test
 {
-	public class Hello<TSession>: Maussoft.Mvc.View<TSession> where TSession : new()
+	public class Hello: Maussoft.Mvc.View<Acme.Example.Session>
 	{
 		public override void Content()
 		{
-			Write(@"{0}",  Context.Data.Html );
+			Context.Session.Names.Add("test"); Write(@"{0}",  Context.Data.Html );
 		}
 	}
 }

@@ -6,7 +6,7 @@ using System;
 
 namespace Acme.Example.Views.Layouts
 {
-	public class Default<TSession>: Maussoft.Mvc.View<TSession> where TSession : new()
+	public class Default: Maussoft.Mvc.View<Acme.Example.Session>
 	{
 		public override void Header()
 		{

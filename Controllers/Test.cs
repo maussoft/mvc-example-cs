@@ -27,7 +27,7 @@ namespace Acme.Example.Controllers
 
             string rstr = String.Format("{0}\n{1}\n{2}\n{3}\nhello {4}\nold: {5}", id, test, test3, test4, name, String.Join(",", names.ToArray()));
 
-            names.Add(name);
+            //names.Add(name);
 
             context.Data.Name = "World";
             context.Data.Html = rstr;

@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 
 namespace Acme.Example.Views.Test
 {
-	public class Index<TSession>: Layouts.Default<TSession> where TSession : new()
+	public class Index: Layouts.Default
 	{
 		public override void Content()
 		{
