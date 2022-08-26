@@ -1,1 +1,0 @@
-<%@ Page %><% Context.Session.Names.Add("test"); %><%= Context.Data.Html %>

@@ -11,11 +11,15 @@ namespace Acme.Example.Views.Layouts
 		public override void Header()
 		{
 			WriteLine();
-			WriteLine(@"<!DOCTYPE html>");
-			WriteLine(@"<html>");
+			WriteLine(@"  <!DOCTYPE html>");
+			WriteLine(@"  <html>");
+			WriteLine();
 			WriteLine(@"  <head>");
-			WriteLine(@"    <title>Hello {0}</title>",  Context.Data.Name );
+			WriteLine(@"    <title>");
+			WriteLine(@"      {0}",  Context.Data.Title );
+			WriteLine(@"    </title>");
 			WriteLine(@"  </head>");
+			WriteLine();
 			WriteLine(@"  <body>");
 			Write(@"    ");
 		}
@@ -24,7 +28,8 @@ namespace Acme.Example.Views.Layouts
 		{
 			WriteLine();
 			WriteLine(@"  </body>");
-			Write(@"</html>");
+			WriteLine();
+			Write(@"  </html>");
 		}
 	}
 }

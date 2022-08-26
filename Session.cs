@@ -4,11 +4,11 @@ namespace Acme.Example
 {
     public class Session
     {
-        public List<string> Names { get; set; }
+        public List<string> Items { get; set; }
 
         public Session()
         {
-            this.Names = new List<string>();
+            this.Items = new List<string>();
         }
     }
 }
