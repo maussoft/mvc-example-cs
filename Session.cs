@@ -4,6 +4,6 @@ namespace Acme.Example
 {
     public class Session
     {
-        public List<string> Items = new List<string>();
+        public List<string> Items { get; set; } = new List<string>();
     }
 }
