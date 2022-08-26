@@ -14,7 +14,7 @@ namespace Acme.Example.Views.Todo
 			WriteLine(@"    <form method=""post"">");
 			WriteLine(@"        <div>");
 			WriteLine(@"            <label>Item</label><br>");
-			WriteLine(@"            <input type=""text"" name=""Item"" value=""{0}""></input><br>",  Context.Data.Values.Item );
+			WriteLine(@"            <input type=""text"" name=""Item"" value=""{0}"" /><br>",  Context.Data.Values.Item ?? "" );
 			Write(@"            ");if(Context.Data.Errors?.Item!=null) { WriteLine();
 			WriteLine(@"                <span>");
 			WriteLine(@"                    {0}",  Context.Data.Errors.Item );

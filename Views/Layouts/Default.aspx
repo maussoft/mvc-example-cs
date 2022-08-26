@@ -4,7 +4,7 @@
 
   <head>
     <title>
-      <%= Context.Data.Title %>
+      <%= Context.Session.Items.Count %>
     </title>
   </head>
 

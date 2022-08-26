@@ -16,7 +16,7 @@ namespace Acme.Example.Views.Layouts
 			WriteLine();
 			WriteLine(@"  <head>");
 			WriteLine(@"    <title>");
-			WriteLine(@"      {0}",  Context.Data.Title );
+			WriteLine(@"      {0}",  Context.Session.Items.Count );
 			WriteLine(@"    </title>");
 			WriteLine(@"  </head>");
 			WriteLine();

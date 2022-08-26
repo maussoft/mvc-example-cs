@@ -2,7 +2,7 @@
     <form method="post">
         <div>
             <label>Item</label><br>
-            <input type="text" name="Item" value="<%= Context.Data.Values.Item %>"></input><br>
+            <input type="text" name="Item" value="<%= Context.Data.Values.Item ?? "" %>" /><br>
             <% if(Context.Data.Errors?.Item!=null) { %>
                 <span>
                     <%= Context.Data.Errors.Item %>

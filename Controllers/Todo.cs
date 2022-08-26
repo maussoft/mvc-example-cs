@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Dynamic;
-using Maussoft.Mvc;
+﻿using Maussoft.Mvc;
 
 namespace Acme.Example.Controllers
 {
@@ -9,6 +6,8 @@ namespace Acme.Example.Controllers
     {
         public void Add(WebContext<Session> context)
         {
+            context.Data.Title = "Add Todo";
+
             if (context.Method == "POST")
             {
                 context.Data.Values = new ViewData(context.Post);
@@ -27,15 +26,12 @@ namespace Acme.Example.Controllers
             else
             {
                 context.Data.Values = new ViewData();
-                context.Data.Values.Item = "";
             }
-
-            context.Data.Title = "Todo app";
         }
 
         public void Index(WebContext<Session> context)
         {
-            context.Data.Title = "Todo app";
+            context.Data.Title = "List Todos";
         }
 
     }
