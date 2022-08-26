@@ -1,11 +1,14 @@
 using System.Collections.Generic;
 
-public class Session
+namespace Acme.Example
 {
-    public List<string> Names { get; set; }
-
-    public Session()
+    public class Session
     {
-        this.Names = new List<string>();
+        public List<string> Names { get; set; }
+
+        public Session()
+        {
+            this.Names = new List<string>();
+        }
     }
 }

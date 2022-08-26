@@ -16,7 +16,7 @@
   <ItemGroup>
     <PackageReference Include="Maussoft.Mvc" Version="0.9.2" />
   </ItemGroup>
-
+  
   <!-- For local development -->
   <!--
     <ItemGroup>
