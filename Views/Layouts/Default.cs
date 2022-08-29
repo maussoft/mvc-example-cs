@@ -11,25 +11,25 @@ namespace Acme.Example.Views.Layouts
 		public override void Header()
 		{
 			WriteLine();
-			WriteLine(@"  <!DOCTYPE html>");
-			WriteLine(@"  <html>");
+			WriteLine(@"<!DOCTYPE html>");
+			WriteLine(@"<html>");
 			WriteLine();
-			WriteLine(@"  <head>");
-			WriteLine(@"    <title>");
-			WriteLine(@"      {0}",  Context.Session.Items.Count );
-			WriteLine(@"    </title>");
-			WriteLine(@"  </head>");
+			WriteLine(@"<head>");
+			WriteLine(@"	<title>");
+			WriteLine(@"		{0}",  Context.Session.Items.Count );
+			WriteLine(@"	</title>");
+			WriteLine(@"</head>");
 			WriteLine();
-			WriteLine(@"  <body>");
-			Write(@"    ");
+			WriteLine(@"<body>");
+			Write(@"	");
 		}
 
 		public override void Footer()
 		{
 			WriteLine();
-			WriteLine(@"  </body>");
+			WriteLine(@"</body>");
 			WriteLine();
-			Write(@"  </html>");
+			Write(@"</html>");
 		}
 	}
 }
