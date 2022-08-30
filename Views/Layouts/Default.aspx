@@ -1,10 +1,15 @@
 ﻿<%@ Master %>
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hello <%= Context.Data.Name %></title>
-  </head>
-  <body>
-    <% RenderViewContent(); %>
-  </body>
+
+<head>
+	<title>
+		<%= Context.Session.Items.Count %>
+	</title>
+</head>
+
+<body>
+	<% RenderViewContent(); %>
+</body>
+
 </html>
